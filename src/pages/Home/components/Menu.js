@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
-import { Button, Icon } from '../../../components';
+import { Button, Icon } from '../../../shared/';
 
 const Container = styled.div`
 display: grid;
@@ -12,23 +12,23 @@ justify-content: start;
 export const Menu = () =>{
   return (
     <Container>
-      <Button>
+      <Button color={"true"}>
         <Icon type ="shield"/>  
       </Button>
 
-      <Button>
+      <Button color={"true"}>
         <Icon type ="lamp"/>  
       </Button>
       
-      <Button>
+      <Button color={"true"}>
         <Icon type ="cap"/>  
       </Button>
       
-      <Button>
+      <Button color={"true"}>
         <Icon type ="forum" />
       </Button>
       
-      <Button>
+      <Button color={"true"}>
         <Icon type ="store" />
       </Button>
     </Container>
