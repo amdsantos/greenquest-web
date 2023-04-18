@@ -1,9 +1,8 @@
 import React from "react";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Details } from "./components/Details";
-import { Home } from "./components/Home";
-import { NotFound } from "./components/NotFound";
+import { Home } from "./pages/Home/Home";
+import { NotFound } from "./shared/NotFound";
 
 
 export function App() {
@@ -11,7 +10,7 @@ export function App() {
 
     <BrowserRouter>
       <Routes>
-        <Route path="/detalhes/:id" element={<Details />} />
+        {/* <Route path="/detalhes/:id" element={<Details />} /> */}
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

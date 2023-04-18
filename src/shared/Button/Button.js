@@ -8,12 +8,12 @@ import {
   
 } from '../common-components/DesignTokens';
 
-export const Button = styled.div`
-border: none;
-border-radius: 10px;
-background-color: ${Colors.GREEN_900};
-box-shadow: ${Shadows.ONE};
-padding: 8px 11px;
+export const Button = styled.button`
+  border: none;
+  border-radius: 10px;
+  background-color: ${(props) => props.color ? Colors.GREEN_900 : "transparent"};
+  box-shadow: ${Shadows.ONE};
+  padding: 8px 11px;
 `
 
 const ButtonInfo = styled.div`
