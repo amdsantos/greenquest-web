@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-export const Amanda = styled.svg`
+export const Svg = styled.svg`
 width: 57px;
 `;
 
@@ -26,7 +26,6 @@ const Cap = () => {
   )
 }
 
-
 const Forum = () => {
   return (
     <>
@@ -42,16 +41,18 @@ const Store = () => {
   )
 }
 
-
 export const Icon = ({
   type
 }) => {
   let iconItem;
   if (type === "shield") { iconItem = <Shield /> };
   if (type === "lamp") { iconItem = <Lamp /> };
+  if (type === "cap") { iconItem = <Cap /> };
+  if (type === "forum") { iconItem = <Forum /> };
+  if (type === "store") { iconItem = <Store /> };
   return (
-    <Amanda>
+    <Svg>
       {iconItem}
-    </Amanda>
+    </Svg>
   )
 };
