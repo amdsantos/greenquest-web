@@ -10,6 +10,10 @@ const SvgLogo = styled.svg`
   width: 120px;
 `;
 
+const SvgArrow = styled.svg`
+  width: 20px;
+`
+
 const Shield = () => {
   return (
     <>
@@ -79,7 +83,13 @@ export const Icon = ({
   if (type === "cap") { iconItem = <Cap /> };
   if (type === "forum") { iconItem = <Forum /> };
   if (type === "store") { iconItem = <Store /> };
-  if (type === "arrowDown") { iconItem = <ArrowDown /> };
+  if (type === "arrowDown") { iconItem = <ArrowDown /> 
+  return (
+    <SvgArrow>
+      {iconItem}
+    </SvgArrow>
+  )
+};
   if (type === "logo") {
     iconItem = <Logo />
     return (
