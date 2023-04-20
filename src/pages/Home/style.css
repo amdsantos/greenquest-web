@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;800&display=swap");
+
+* {
+  font-family: "Heebo", sans-serif;
+  transition: 300ms;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-top: 9px solid rgba(92, 146, 73, 1);
+  border-bottom: 1px solid rgba(19, 31, 15, 0.1);
+  padding: 30px 40px;
+}
+.header__logo,
+.header__menu {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.main {
+  display: grid;
+  grid-auto-flow: row;
+  gap: 40px;
+}
+
+.hero {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: min(300px);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(0deg, #5c9249, #5c9249), url(../../assets/img/hero.jpg) center;
+  background-blend-mode: normal, overlay, normal;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+.hero__text {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 94px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.menu__button {
+  display: flex;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  transition: 300ms;
+  border-radius: 10px;
+}
+.menu__button:hover {
+  background: rgba(235, 243, 232, 1);
+}
+.menu__button:hover .menu__button__icon {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.menu__button__icon {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 80px;
+  width: 80px;
+  background-color: rgba(92, 146, 73, 1);
+}
+.menu__button__icon img {
+  width: 57px;
+}
+.menu__button__label {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: left;
+  padding: 10px;
+}
+.menu__button__label :first-child {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+.menu__button__label :last-child {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(129, 129, 129, 1);
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  border-bottom: 22px solid rgba(92, 146, 73, 1);
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 720px) {
+  .header {
+    padding: 30px 20px;
+  }
+
+  .menu {
+    display: grid;
+    gap: 20px;
+  }
+  .footer {
+    position: relative;
+  }
+}
