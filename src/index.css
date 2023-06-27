@@ -1,0 +1,53 @@
+:root {
+  @font-face {
+    font-family: Heebo;
+    src: url("../src/assets/font/Heebo.ttf");
+  }
+
+  --primary-color: rgba(92, 146, 73, 1);
+  --white: rgba(235, 243, 232, 1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Heebo, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+input {
+  background: var(--white);
+  padding: 10px 24px;
+  border: 1px solid #131f0f;
+  border-radius: 30px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn {
+  border: none;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  padding: 10px 24px;
+  line-height: 24px;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.btn-secondary {
+  background-color: var(--white);
+}

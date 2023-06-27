@@ -1,0 +1,44 @@
+.register {
+  width: 100%;
+  min-height: calc(100vh - 22px);
+  background: url("../src/assets/img/bg-login.jpg") center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.register__logo {
+  justify-self: center;
+}
+
+.register__form {
+  display: grid;
+  gap: 20px;
+}
+.register__form div {
+  display: grid;
+  gap: 4px;
+}
+
+.register__form__text {
+  margin: 0;
+  text-align: center;
+}
+
+.register__form__line {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  background: rgba(247, 250, 245, 0.9);
+}
+
+.register__form__line > span {
+  background: rgba(247, 250, 245, 0.9);
+  padding: 0 10px;
+}
