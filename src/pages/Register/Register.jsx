@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import Logo from "../../assets/img/logo.svg";
 import Google from "../../assets/img/google.svg";
-import Card from "../../components/Card";
+import Card from "../../components/Card/Card";
 
 const Register = () => {
   return (
@@ -21,10 +21,9 @@ const Register = () => {
           Entre com o Google
         </button>
 
+        <div className="register__divider">ou</div>
+
         <form className="register__form">
-          <div className="register__form__line">
-            <span>ou</span>
-          </div>
           <div>
             <label htmlFor="register-name">Nome</label>
             <input
