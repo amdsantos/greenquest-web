@@ -1,8 +1,19 @@
 .card {
-  background: rgba(247, 250, 245, 0.9);
-  border: 1px solid rgba(19, 31, 15, 0.5);
-  border-radius: 30px;
-  padding: 60px 40px;
   display: grid;
-  gap: 40px;
+  margin: 1rem;
+  padding: 3.75rem 2.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+
+  border-radius: 30px;
+  border: 1px solid rgba(19, 31, 15, 0.5);
+  background: rgba(247, 250, 245, 0.7);
+  backdrop-filter: blur(5px);
+}
+
+.card--border {
+  border-radius: 30px;
+  border: 10px solid var(--5-c-9249, #5c9249);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
