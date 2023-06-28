@@ -1,0 +1,74 @@
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.menu--vertical {
+  display: grid !important;
+  align-content: start;
+  gap: 40px;
+}
+
+.menu__button {
+  display: flex;
+  justify-content: start;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  transition: 300ms;
+  border-radius: 10px;
+}
+.menu__button:hover {
+  background: rgba(235, 243, 232, 1);
+}
+.menu__button:hover .menu__button__icon {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.menu__button__icon {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 80px;
+  width: 80px;
+  background-color: rgba(92, 146, 73, 1);
+}
+.menu__button__icon img {
+  width: 57px;
+}
+.menu__button__label {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: left;
+  padding: 10px;
+}
+.menu__button__label :first-child {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  text-transform: uppercase;
+}
+.menu__button__label :last-child {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(129, 129, 129, 1);
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 720px) {
+  .menu {
+    display: grid;
+    gap: 20px;
+  }
+
+  .menu--vertical .menu__button__label {
+    display: none;
+  }
+}
