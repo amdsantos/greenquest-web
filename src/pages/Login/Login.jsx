@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import Logo from "../../assets/img/logo.svg";
 import Google from "../../assets/img/google.svg";
-import Card from "../../components/Card";
+import Card from "../../components/Card/Card";
 
 const Login = () => {
   return (
