@@ -1,11 +1,10 @@
 .register {
   width: 100%;
-  min-height: calc(100vh - 22px);
+  min-height: 100vh;
   background: url("../src/assets/img/bg-login.jpg") center;
   display: grid;
   justify-content: center;
   align-items: center;
-  padding-bottom: 40px;
 }
 
 .register__logo {
@@ -38,7 +37,23 @@
   background: rgba(247, 250, 245, 0.9);
 }
 
-.register__form__line > span {
-  background: rgba(247, 250, 245, 0.9);
-  padding: 0 10px;
+.register__divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.register__divider::before,
+.register__divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #989898;
+}
+
+.register__divider:not(:empty)::before {
+  margin-right: 0.5em;
+}
+
+.register__divider:not(:empty)::after {
+  margin-left: 0.5em;
 }
