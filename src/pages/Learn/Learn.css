@@ -1,0 +1,18 @@
+.learn {
+  display: grid;
+  gap: 6.3rem;
+  grid-auto-flow: column;
+  margin: 3.75rem 2.5rem;
+  justify-content: start;
+}
+
+.league div {
+  display: grid;
+  gap: 4px;
+}
+
+@media screen and (max-width: 720px) {
+  .learn {
+    gap: 1rem;
+  }
+}
