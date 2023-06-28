@@ -1,0 +1,23 @@
+.league {
+  display: grid;
+  gap: 6.3rem;
+  grid-auto-flow: column;
+  margin: 3.75rem 2.5rem;
+  justify-content: start;
+}
+
+.league__form {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.league__form div {
+  display: grid;
+  gap: 4px;
+}
+
+@media screen and (max-width: 720px) {
+  .league {
+    gap: 1rem;
+  }
+}
