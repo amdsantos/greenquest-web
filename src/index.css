@@ -50,4 +50,5 @@ button {
 
 .btn-secondary {
   background-color: var(--white);
+  cursor: pointer;
 }
