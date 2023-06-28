@@ -15,41 +15,40 @@ const Login = () => {
           alt="Logo escrito GreenQuest em preto ao lado de um ramo com duas folhas verdes"
           className="login__logo"
         />
+
+        <button type="submit" className="btn btn-secondary">
+          <img src={Google} alt="Logo do Google" />
+          Entre com o Google
+        </button>
+
+        <div className="login__divider">ou</div>
+
         <form className="login__form">
           <div>
-            <label htmlFor="register-email">Email</label>
+            <label htmlFor="login-email">Email</label>
             <input
               type="email"
               placeholder="exemplo@email.com"
-              id="register-email"
+              id="login-email"
               required
             />
           </div>
           <div>
-            <label htmlFor="register-password">Senha</label>
+            <label htmlFor="login-password">Senha</label>
             <input
               type="password"
               placeholder="**************"
-              id="register-password"
+              id="login-password"
               required
             />
           </div>
 
           <button type="submit" className="btn btn-primary">
-            Entrar
-          </button>
-
-          <div className="login__form__line">
-            <span>ou</span>
-          </div>
-
-          <button type="submit" className="btn btn-secondary">
-            <img src={Google} alt="Logo do Google" />
-            Entre com o Google
+            Cadastrar
           </button>
 
           <p className="login__form__text">
-            Náo possui conta? Registre-se <Link to="/login">aqui</Link>
+            Não possui conta? Registre-se <Link to="/register">aqui</Link>
           </p>
         </form>
       </Card>
