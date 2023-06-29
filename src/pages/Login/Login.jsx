@@ -1,48 +1,49 @@
 import "./Login.css";
 
-import { Link } from "react-router-dom";
-import React, { useState, useEffect } from "react";
-import { useGoogleLogin, googleLogout } from "@react-oauth/google";
 import axios from "axios";
+import { useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useGoogleLogin } from "@react-oauth/google";
 
 import Logo from "../../assets/img/logo.svg";
 import Google from "../../assets/img/google.svg";
 import Card from "../../components/Card/Card";
 
-const apiKey = import.meta.env.VITE_GOOGLE_OAUTH_CLIENT_ID;
+import { getUserMethod, setUserMethod } from "./LoginService";
 
 const Login = () => {
-  const [user, setUser] = useState([]);
-  const [profile, setProfile] = useState([]);
+  const navigate = useNavigate();
 
   const login = useGoogleLogin({
-    onSuccess: (codeResponse) => setUser(codeResponse),
+    onSuccess: (codeResponse) => {
+      setUserMethod(codeResponse);
+      navigate("/");
+    },
     onError: (error) => console.log("Login Failed:", error),
   });
 
+  const userData = getUserMethod();
+
   useEffect(() => {
-    if (user) {
+    if (userData) {
       axios
         .get(
-          `https://www.googleapis.com/oauth2/v1/userinfo?access_token=${user.access_token}`,
+          `https://www.googleapis.com/oauth2/v1/userinfo?access_token=${userData.access_token}`,
           {
             headers: {
-              Authorization: `Bearer ${user.access_token}`,
+              Authorization: `Bearer ${userData.access_token}`,
               Accept: "application/json",
             },
           }
         )
         .then((res) => {
-          setProfile(res.data);
+          setUserMethod(res);
+          navigate("/");
         })
-        .catch((err) => console.log(err));
+        .catch((err) => console.log({ err }));
     }
-  }, [user]);
+  }, [userData]);
 
-  const logOut = () => {
-    googleLogout();
-    setProfile(null);
-  };
   return (
     <div className="login">
       <Card>
@@ -51,12 +52,10 @@ const Login = () => {
           alt="Logo escrito GreenQuest em preto ao lado de um ramo com duas folhas verdes"
           className="login__logo"
         />
-
         <button onClick={() => login()} className="btn btn-secondary">
           <img src={Google} alt="Logo do Google" />
           Entre com o Google
         </button>
-
         <div className="login__divider">ou</div>
 
         <form className="login__form">
@@ -66,7 +65,6 @@ const Login = () => {
               type="email"
               placeholder="exemplo@email.com"
               id="login-email"
-              required
             />
           </div>
           <div>
@@ -75,13 +73,14 @@ const Login = () => {
               type="password"
               placeholder="**************"
               id="login-password"
-              required
             />
           </div>
 
-          <button type="submit" className="btn btn-primary">
-            Cadastrar
-          </button>
+          <Link to={"/"}>
+            <button type="submit" className="btn btn-primary">
+              Cadastrar
+            </button>
+          </Link>
 
           <p className="login__form__text">
             Não possui conta? Registre-se <Link to="/register">aqui</Link>

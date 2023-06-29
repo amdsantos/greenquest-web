@@ -50,3 +50,7 @@
 .login__divider:not(:empty)::after {
   margin-left: 0.5em;
 }
+
+a button.btn {
+  width: 100%;
+}

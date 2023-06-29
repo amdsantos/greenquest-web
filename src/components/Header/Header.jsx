@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { googleLogout } from "@react-oauth/google";
 
 import "./Header.css";
 
@@ -6,7 +7,20 @@ import Logo from "../../assets/img/logo.svg";
 import UserIcon from "../../assets/img/user.png";
 import ArrowDownIcon from "../../assets/img/icons/arrow-down.svg";
 
+import {
+  getUserMethod,
+  removeUserMethod,
+} from "../../pages/Login/LoginService";
+
 const Header = () => {
+  const navigate = useNavigate();
+
+  const logOut = () => {
+    googleLogout();
+    removeUserMethod();
+    navigate("/login");
+  };
+
   return (
     <header className="header">
       <div className="header__logo">
@@ -15,12 +29,12 @@ const Header = () => {
           alt="Logo escrito GreenQuest em preto ao lado de um ramo com duas folhas verdes"
         />
       </div>
-      <Link to="/login">
-        <div className="header__menu">
+      {getUserMethod() && (
+        <div className="header__menu" onClick={() => logOut()}>
           <img src={UserIcon} alt="Foto do perfil" />
           <img src={ArrowDownIcon} alt="Seta preta para baixo" />
         </div>
-      </Link>
+      )}
     </header>
   );
 };
