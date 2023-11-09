@@ -69,22 +69,14 @@ function proximaPergunta(correta){
         </div>
         )}
         
-        
             </div>
-
     </div>
-
-
-    </>
-    )}
-                    </div>
-
-                </main>
+    </>)}
+            </div>
+                 </main>
                 <footer className="footer"></footer>
-
-                </div>
-        )
-        
-    }
+             </div>
+                  )
+                  }
 
     export default Game;
