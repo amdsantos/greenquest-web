@@ -8,6 +8,11 @@
 
 }
 
+.card-box{
+    display: inline-flex
+    justify-content: center;
+
+}
 .products {
     overflow-x: hidden;
     min-width: 600px;
@@ -27,7 +32,6 @@
 }
 
 .products-cart{
-
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -142,12 +146,9 @@
     color: rgba(92, 146, 73, 1);
     font-weight: 900;
     font-family: "Heebo", sans-serif;
-    font-size: 32px;
+    font-size: 30px;
 
 }
-
-
-
 
 /* Responsive */
 
