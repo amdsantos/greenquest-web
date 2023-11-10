@@ -1,0 +1,197 @@
+
+.title-loja{
+    color: rgba(92, 146, 73, 1);
+    font-weight: 800;
+    font-family: "Heebo", sans-serif;
+    font-size: 32px;
+    text-align: center;
+
+}
+
+.products {
+    overflow-x: hidden;
+    min-width: 600px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-left: 100px;
+
+
+}
+
+.products img {
+    width: 30%;
+    height: 40%;
+    
+}
+
+.products-cart{
+
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-left: 100px;
+
+}
+
+.products-cart img {
+    margin-right: 20px;
+    width: 30%;
+    height: 40%;
+    
+}
+
+
+.title-lojacart{
+    color: rgba(92, 146, 73, 1);
+    font-weight: 800;
+    font-family: "Heebo", sans-serif;
+    font-size: 32px;
+    margin-left: 6%;
+    
+
+}
+
+.button-buy{
+    width: 100px;
+    padding: 5PX;
+    background-color: rgba(92, 146, 73, 1);
+    border-radius: 10px;
+    color: aliceblue;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+
+.button-buy:hover{
+    background-color: rgba(137, 215, 48, 0);
+    color: rgb(76, 76, 77);
+    box-shadow: 5px 2px 0px rgba(23, 156, 18, 0.742);
+    font-weight: 900;
+
+}
+.button-product{
+    width: 10%;
+    padding: 5PX;
+    background-color: rgba(92, 146, 73, 1);
+    border-radius: 10px;
+    color: aliceblue;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 6%;
+
+}
+
+.button-product:hover{
+    background-color: rgba(137, 215, 48, 0);
+    color: rgb(76, 76, 77);
+    box-shadow: 5px 2px 0px rgba(23, 156, 18, 0.742);
+    font-weight: 900;
+
+}
+
+.button-product:active{
+    background-color: rgba(137, 215, 48, 0);
+    color: rgb(18, 19, 19);
+    box-shadow: 05px 02px 02px 0px rgba(137, 215, 48, 0.633);
+    font-weight: 900;
+
+}
+
+.button-remove{
+    width: 25%;
+    padding: 5PX;
+    background-color: rgba(92, 146, 73, 1);
+    border-radius: 10px;
+    color: aliceblue;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cart {
+    padding-left: 20px;
+    margin-left: 50px;
+    font-size: 10px;
+    border-radius: 200px;
+    width: 60px;
+    height: 60px;
+    font-weight: 800;
+    background-color: rgba(92, 146, 73, 1);
+    color: aliceblue;
+    cursor: pointer;
+    margin-left: 80%;
+
+}
+
+.cart:hover{
+    background-color: rgba(137, 215, 48, 0.633);
+    color: aliceblue;
+    font-weight: 600;
+}
+
+.icon{
+    margin-left: 50px;
+    margin: -19px;
+    width: 20px;
+    height: 20px;
+}
+
+.card-title{
+    color: rgba(92, 146, 73, 1);
+    font-weight: 900;
+    font-family: "Heebo", sans-serif;
+    font-size: 32px;
+
+}
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 760px) {
+body{
+    width: max-content;
+}
+
+.title-loja{
+    text-align: left;
+
+}
+
+.container {
+    display: block;
+
+    }
+
+    .products{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .button-product{
+        width: 10%;
+    }
+    .cart .icon{
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+img{
+    display: block; 
+    margin: 10px 0; 
+    } 
+
+    .products{
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
