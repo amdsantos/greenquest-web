@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./Home.css";
 
 import Logo from "../../assets/img/logo.svg";
@@ -9,6 +10,8 @@ import LampIcon from "../../assets/img/icons/lamp.svg";
 import StudentCapIcon from "../../assets/img/icons/cap.svg";
 import ChatIcon from "../../assets/img/icons/chat.svg";
 import StoreIcon from "../../assets/img/icons/store.svg";
+
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -53,7 +56,7 @@ const Home = () => {
                 <img src={LampIcon} alt="Ícone lâmpada branca" />
               </div>
               <div className="menu__button__label">
-                <span>Praticar</span>
+              <Link  className="link" to={"/game"}> <span>Praticar</span>  </Link>
                 <span>Treine suas skills</span>
               </div>
             </button>
@@ -83,7 +86,7 @@ const Home = () => {
                 <img src={StoreIcon} alt="Ícone de loja branco" />
               </div>
               <div className="menu__button__label">
-                <span>Loja</span>
+              <Link className="link" to={"/loja"}> <span>Loja</span> </Link> 
                 <span>Troque seus pontos</span>
               </div>
             </button>
