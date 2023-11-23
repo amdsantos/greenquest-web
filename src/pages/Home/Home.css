@@ -89,11 +89,6 @@
   text-transform: uppercase;
 }
 
-.menu__button__label .link :first-child:hover {
-  color:#5c9249;
-  font-weight: 900;
-  }
-
 .menu__button__label :last-child {
   font-weight: 300;
   font-size: 16px;

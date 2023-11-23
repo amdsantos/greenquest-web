@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home/Home";
@@ -6,8 +6,8 @@ import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import League from "./pages/League/League";
 import Learn from "./pages/Learn/Learn";
-import Game from "./pages/Home/quiz/Game";
-import { Store } from "./pages/Home/Store/Store";
+import Game from "./pages/Quiz";
+import { Store } from "./pages/Store";
 
 function App() {
   return (

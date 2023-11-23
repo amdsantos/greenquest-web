@@ -1,4 +1,7 @@
 import React from "react";
+
+import "./Home.css";
+
 import Logo from "../../assets/img/logo.svg";
 import UserIcon from "../../assets/img/user.png";
 import ArrowDownIcon from "../../assets/img/icons/arrow-down.svg";
@@ -7,12 +10,8 @@ import LampIcon from "../../assets/img/icons/lamp.svg";
 import StudentCapIcon from "../../assets/img/icons/cap.svg";
 import ChatIcon from "../../assets/img/icons/chat.svg";
 import StoreIcon from "../../assets/img/icons/store.svg";
+
 import { Link } from 'react-router-dom';
-
-
-import "./Home.css";
-import Footer from "../Footer/Footer";
-
 
 const Home = () => {
   return (
@@ -93,7 +92,7 @@ const Home = () => {
             </button>
           </section>
         </main>
-        <Footer/>
+        <footer className="footer"></footer>
       </body>
     </html>
   );
