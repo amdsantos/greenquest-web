@@ -6,8 +6,8 @@ import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import League from "./pages/League/League";
 import Learn from "./pages/Learn/Learn";
-import Game from "./pages/Quiz";
-import { Store } from "./pages/Store";
+import Game from "./pages/Quiz/Quiz";
+import Store from "./pages/Store";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Route path="/ligas" element={<League />} />
         <Route path="/aprender" element={<Learn />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/cadastrar" element={<Register />} />
         <Route path="/game" element={<Game />} />
         <Route path="/loja" element={<Store />} />
 

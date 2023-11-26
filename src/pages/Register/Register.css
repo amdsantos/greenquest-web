@@ -1,7 +1,7 @@
 .register {
   width: 100%;
   min-height: 100vh;
-  background: url("../src/assets/img/bg-login.jpg") center;
+  background: url("../src/assets/images/bg-login.jpg") center;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -15,6 +15,7 @@
   display: grid;
   gap: 20px;
 }
+
 .register__form div {
   display: grid;
   gap: 4px;

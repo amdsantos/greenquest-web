@@ -5,8 +5,8 @@ import React, { useState, useEffect } from "react";
 import { useGoogleLogin, googleLogout } from "@react-oauth/google";
 import axios from "axios";
 
-import Logo from "../../assets/img/logo.svg";
-import Google from "../../assets/img/google.svg";
+import Logo from "../../assets/images/logo.svg";
+import Google from "../../assets/images/google.svg";
 import Card from "../../components/Card/Card";
 
 const apiKey = import.meta.env.VITE_GOOGLE_OAUTH_CLIENT_ID;
@@ -43,6 +43,7 @@ const Register = () => {
     googleLogout();
     setProfile(null);
   };
+
   return (
     <div className="register">
       <Card>
@@ -52,7 +53,7 @@ const Register = () => {
           className="register__logo"
         />
 
-        <button onClick={() => login()} className="btn btn-secondary">
+        <button type="submit" className="btn btn-secondary">
           <img src={Google} alt="Logo do Google" />
           Entre com o Google
         </button>

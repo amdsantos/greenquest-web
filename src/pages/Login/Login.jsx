@@ -1,12 +1,12 @@
 import "./Login.css";
 
 import axios from "axios";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useGoogleLogin } from "@react-oauth/google";
 
-import Logo from "../../assets/img/logo.svg";
-import Google from "../../assets/img/google.svg";
+import Logo from "../../assets/images/logo.svg";
+import Google from "../../assets/images/google.svg";
 import Card from "../../components/Card/Card";
 
 import { getUserMethod, setUserMethod } from "./LoginService";

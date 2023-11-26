@@ -3,9 +3,9 @@ import { googleLogout } from "@react-oauth/google";
 
 import "./Header.css";
 
-import Logo from "../../assets/img/logo.svg";
-import UserIcon from "../../assets/img/user.png";
-import ArrowDownIcon from "../../assets/img/icons/arrow-down.svg";
+import Logo from "../../assets/images/logo.svg";
+import UserIcon from "../../assets/images/user.png";
+import ArrowDownIcon from "../../assets/images/icons/arrow-down.svg";
 
 import {
   getUserMethod,

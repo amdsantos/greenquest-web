@@ -1,10 +1,11 @@
 .login {
   width: 100%;
-  min-height: 100vh;
-  background: url("../src/assets/img/bg-login.jpg") center;
+  min-height: calc(100vh - 22px);
+  background: url("../src/assets/images/bg-login.jpg") center;
   display: grid;
   justify-content: center;
   align-items: center;
+  padding-bottom: 40px;
 }
 
 .login__logo {
@@ -15,6 +16,7 @@
   display: grid;
   gap: 20px;
 }
+
 .login__form div {
   display: grid;
   gap: 4px;
@@ -26,31 +28,18 @@
 }
 
 .login__form__line {
-  text-align: center;
-  text-transform: lowercase;
-}
-
-.login__divider {
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-.login__divider::before,
-.login__divider::after {
-  content: "";
-  flex: 1;
-  border-bottom: 1px solid #989898;
-}
-
-.login__divider:not(:empty)::before {
-  margin-right: 0.5em;
-}
-
-.login__divider:not(:empty)::after {
-  margin-left: 0.5em;
-}
-
-a button.btn {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
   width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+  background: rgba(247, 250, 245, 0.9);
 }
+
+/* .login__form__line > span {
+  background: rgba(247, 250, 245, 0.9);
+  padding: 0 10px;
+} */
