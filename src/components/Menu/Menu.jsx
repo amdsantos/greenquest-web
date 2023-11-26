@@ -2,11 +2,11 @@ import { Link, useLocation } from "react-router-dom";
 
 import "./Menu.css";
 
-import LampIcon from "../../assets/img/icons/lamp.svg";
-import ChatIcon from "../../assets/img/icons/chat.svg";
-import StoreIcon from "../../assets/img/icons/store.svg";
-import ShieldIcon from "../../assets/img/icons/shield.svg";
-import StudentCapIcon from "../../assets/img/icons/cap.svg";
+import LampIcon from "../../assets/images/icons/lamp.svg";
+import ChatIcon from "../../assets/images/icons/chat.svg";
+import StoreIcon from "../../assets/images/icons/store.svg";
+import ShieldIcon from "../../assets/images/icons/shield.svg";
+import StudentCapIcon from "../../assets/images/icons/cap.svg";
 
 const Menu = ({ vertical }) => {
   const location = useLocation();

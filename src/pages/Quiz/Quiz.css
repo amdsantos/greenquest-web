@@ -1,31 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;800&display=swap");
 
 
-.card{
+.card {
     height: 500px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    background-image: url("https://www.bwbr.com/wp-content/uploads/2022/02/ESG-Side-of-Design.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    border: none; 
+    border: none;
 }
 
-.title{
+.title {
     color: rgba(92, 146, 73, 1);
     font-weight: 800;
     font-family: "Heebo", sans-serif;
     font-size: 32px;
 }
 
-.question_container{
+.question_container {
     color: rgb(35, 34, 34);
     font-weight: 800;
     font-size: 20px;
-    
+
 }
-.quiz{
+
+.quiz {
     text-align: center;
     padding-top: 10px;
     background-color: rgba(255, 255, 255, 0.35);
@@ -39,33 +39,33 @@
     height: 80%;
 }
 
-.questions{
+.questions {
     background-color: aqua;
     border-radius: 5px;
-min-height: 200px;
-height: max-content;
-padding: 2px;
-box-shadow: 10px 10px 40px 0px #0000;
-margin-bottom: 6px;
+    min-height: 200px;
+    height: max-content;
+    padding: 2px;
+    box-shadow: 10px 10px 40px 0px #0000;
+    margin-bottom: 6px;
 
 }
 
-.options{
+.options {
     color: rgba(92, 146, 73, 1);
     font-weight: 900;
     border-radius: 2px;
     padding-right: 5px;
 }
 
-    .group{
-        display: flex;
-        flex: 1 1 200px;
-        justify-content: center;
-        align-items: center;
+.group {
+    display: flex;
+    flex: 1 1 200px;
+    justify-content: center;
+    align-items: center;
 
-    }
+}
 
-.buttonquiz{
+.buttonquiz {
     width: 55%;
     margin: 10PX;
     padding: 5PX;
@@ -78,27 +78,28 @@ margin-bottom: 6px;
 
 }
 
-.buttonquiz:hover{
+.buttonquiz:hover {
     background-color: rgba(148, 148, 148, 0);
     color: rgb(95, 95, 95);
     font-weight: 900;
 }
 
-.buttonquiz:active{
+.buttonquiz:active {
     background-color: #ffffff00;
     box-shadow: 5px 5px 0px rgb(62, 137, 35);
     box-shadow: 5px 5px 0px #65c968c8;
     color: black;
 
 }
-.box{
+
+.box {
     color: rgb(79, 79, 79);
     font-weight: 800;
     font-size: 15px;
 }
 
-.pontuacao{
-    color: rgb(62, 137, 35); 
+.pontuacao {
+    color: rgb(62, 137, 35);
     margin: auto;
     padding-top: 100px;
     text-align: center;
@@ -108,7 +109,7 @@ margin-bottom: 6px;
 
 }
 
-.pontuacao-back{
+.pontuacao-back {
     display: inline-block;
     justify-content: center;
     align-items: center;
@@ -123,15 +124,15 @@ margin-bottom: 6px;
     cursor: pointer;
 }
 
-.pontuacao-back:hover{
+.pontuacao-back:hover {
     background-color: rgba(148, 148, 148, 0);
     color: rgb(61, 59, 59);
-    font-weight: 600; 
+    font-weight: 600;
 
 }
 
 
-.planet{
+.planet {
     width: 30%;
     height: 20%;
     margin: 0 auto;
@@ -145,16 +146,16 @@ margin-bottom: 6px;
 /* Responsive Mobile*/
 
 @media (max-width: 720px) {
-    .card{
-        width:max-content;
+    .card {
+        width: max-content;
         height: 400px;
         margin: 0 auto;
         display: flex;
     }
-        .quiz {
+
+    .quiz {
         width: max-content;
         height: max-content;
-        }
-    
     }
-    
+
+}
